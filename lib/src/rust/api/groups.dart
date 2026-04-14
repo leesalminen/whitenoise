@@ -67,6 +67,12 @@ Future<void> removeMembersFromGroup({
   memberPubkeys: memberPubkeys,
 );
 
+Future<void> leaveGroup({required String pubkey, required String groupId}) =>
+    RustLib.instance.api.crateApiGroupsLeaveGroup(
+      pubkey: pubkey,
+      groupId: groupId,
+    );
+
 Future<Group> getGroup({
   required String accountPubkey,
   required String groupId,
