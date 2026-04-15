@@ -1006,6 +1006,21 @@ class AppLocalizationsIt extends AppLocalizations {
   String get addToGroup => 'Aggiungi al gruppo';
 
   @override
+  String get blockUser => 'Blocca utente';
+
+  @override
+  String get unblockUser => 'Sblocca utente';
+
+  @override
+  String get unblock => 'Sblocca';
+
+  @override
+  String get failedToBlockUser => 'Impossibile bloccare l\'utente. Riprova.';
+
+  @override
+  String get failedToUnblockUser => 'Impossibile sbloccare l\'utente. Riprova.';
+
+  @override
   String get addToAnotherGroup => 'Aggiungi a un altro gruppo';
 
   @override
@@ -1382,6 +1397,12 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get removedFromGroupDescription =>
       'Puoi ancora visualizzare i messaggi salvati, ma non puoi inviarne o riceverne di nuovi. Puoi archiviare o eliminare la chat in qualsiasi momento.';
+
+  @override
+  String get userIsBlocked => 'Hai bloccato questo utente';
+
+  @override
+  String get userIsBlockedDescription => 'Non riceverai nuovi messaggi finché non lo sblocchi.';
 
   @override
   String get notificationSettings => 'Notifiche';
